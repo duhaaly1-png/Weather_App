@@ -1,0 +1,15 @@
+{
+  "name": "weather-dashboard-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack weather dashboard with React, Express, local persistence, and export features.",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
